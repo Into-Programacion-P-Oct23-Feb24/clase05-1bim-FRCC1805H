@@ -30,6 +30,12 @@ public class Ejemplo3 {
         double nota1;
         double nota2;
         double suma;
+        String minombre;
+        String miapellido;
+        System.out.println("Ingrese el nombre, por favor");
+        minombre = entrada.nextLine();
+        System.out.println("Ingrese el apellido, por favor");
+        miapellido = entrada.nextLine();
         
         System.out.println("Ingrese el nota 1, por favor");
         nota1 = entrada.nextDouble();
@@ -39,11 +45,11 @@ public class Ejemplo3 {
         promedio = suma / 2;
         
         if (promedio >= 7.5) {
-            System.out.printf("Estudiante aprobado con un "
-                    + "promedio: %.2f\n", promedio);
+            System.out.printf("Estudiante %s %s con notas %.2f y %.2f aprobado con un "
+                    + "promedio: %.2f\n",minombre,miapellido, promedio);
         }else{
-            System.out.printf("Estudiante reprobado con un "
-                    + "promedio: %.2f\n", promedio);
+            System.out.printf("Estudiante %s %s con notas y reprobado con un "
+                    + "promedio: %.2f\n",minombre,miapellido, promedio);
         }
     }
     
